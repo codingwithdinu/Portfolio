@@ -182,3 +182,31 @@
  .project-grid{scroll-behavior:auto}
  .project-card,.project-carousel-controls button{transition:none}
 }
+
+
+/* Experience cards: horizontal swipe carousel on mobile */
+.experience-carousel-controls{display:none}
+@media(max-width:760px){
+ .experience-carousel-controls{display:flex;align-items:center;justify-content:flex-end;gap:10px;margin:0 0 12px;color:#8eaa9b;font-size:10px}
+ .experience-carousel-controls button{width:36px;height:36px;display:grid;place-items:center;border:1px solid #286347;border-radius:50%;background:#092117;color:#dfffee;cursor:pointer;transition:background .2s,border-color .2s,transform .2s}
+ .experience-carousel-controls button:active{transform:scale(.94);background:#13e68a;color:#03150d}
+ .experience-section .timeline{display:flex;gap:13px;overflow-x:auto;overflow-y:hidden;margin:0;padding:2px 1px 18px;border:0;scroll-snap-type:x mandatory;scroll-padding:1px;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;scrollbar-width:thin;scrollbar-color:#176644 transparent}
+ .experience-section .timeline-item{position:relative;flex:0 0 min(88%,390px);min-width:0;scroll-snap-align:start;scroll-snap-stop:always;display:flex;flex-direction:column}
+ .experience-section .timeline-dot{display:none}
+ .experience-section .timeline-card{height:100%;display:flex;flex-direction:column;min-height:260px;padding:19px;border:1px solid #174b38;border-radius:16px;background:linear-gradient(145deg,rgba(8,31,21,.96),rgba(4,17,13,.96))}
+ .experience-section .timeline-head{gap:10px}
+ .experience-section .timeline-head h3{font-size:17px;line-height:1.35}
+ .experience-section .experience-org-links{gap:8px}
+ .experience-section .experience-org-link{font-size:12px}
+ .experience-section .experience-period{font-size:11px}
+ .experience-section .experience-type{align-self:flex-start}
+ .experience-section .timeline-card p{font-size:12px;line-height:1.75;margin-top:14px}
+}
+@media(max-width:380px){
+ .experience-section .timeline-item{flex-basis:92%}
+ .experience-section .timeline-card{padding:16px}
+}
+@media(prefers-reduced-motion:reduce){
+ .experience-section .timeline{scroll-behavior:auto}
+ .experience-carousel-controls button{transition:none}
+}
