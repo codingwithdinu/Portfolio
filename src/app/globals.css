@@ -48,3 +48,13 @@
  .orbit-label-6{left:-25px}
 }
 @media(prefers-reduced-motion:reduce){.orbit-ring-outer,.orbit-label{animation:none}}
+
+/* Dynamic hero role and portrait motion */
+.hero-role-line{align-items:center;min-height:28px;gap:10px}
+.hero-role-line .role-prefix,.hero-role-line>span:last-child{color:#d8e8df}
+.hero-role-line .rotating-role{display:inline-block;min-width:230px;color:#20e99a;font-weight:650;text-shadow:0 0 22px #13dc8940}
+.portrait-float{will-change:transform}
+.eyebrow .status-dot{animation:statusPulse 1.8s ease-in-out infinite}
+@keyframes statusPulse{0%,100%{box-shadow:0 0 0 0 #13e99570}50%{box-shadow:0 0 0 7px #13e99500}}
+@media(max-width:760px){.hero-role-line{gap:7px;font-size:11px}.hero-role-line .rotating-role{min-width:0}.hero-role-line i{display:none}}
+@media(prefers-reduced-motion:reduce){.portrait-float{transform:none!important}.eyebrow .status-dot{animation:none}}
