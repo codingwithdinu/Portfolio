@@ -110,3 +110,75 @@
 .experience-org-links{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 .experience-partner-link{display:inline-flex;align-items:center;gap:5px;color:#a8c5b6;font-size:12px;text-decoration:none;border-bottom:1px dashed #527d68}
 .experience-partner-link:hover{color:#19e69a;border-color:#19e69a}
+
+
+/* Mobile-first project carousel and touch-friendly layout */
+.project-heading-actions{display:flex;align-items:center;gap:18px}
+.project-carousel-controls{display:none;align-items:center;gap:8px}
+.project-carousel-controls button{width:38px;height:38px;display:grid;place-items:center;border:1px solid #286347;border-radius:50%;background:#092117;color:#dfffee;cursor:pointer;transition:background .2s,border-color .2s,transform .2s}
+.project-carousel-controls button:active{transform:scale(.94);background:#13e68a;color:#03150d}
+.project-grid{scrollbar-width:thin;scrollbar-color:#176644 transparent}
+@media(max-width:760px){
+ .section-wrap{width:calc(100% - 28px)}
+ .site-header{padding:0 14px}
+ .brand{font-size:16px;gap:10px}
+ .hero{padding-top:18px}
+ .hero-copy{padding:18px 0}
+ .hero h1{font-size:clamp(46px,13vw,58px);letter-spacing:-2.8px}
+ .hero-description{font-size:13px;line-height:1.75}
+ .hero-buttons{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+ .hero-buttons .button:first-child{grid-column:1/-1}
+ .hero-buttons .button{width:100%;padding:0 12px}
+ .hero-visual{min-height:365px}
+ .stats{margin-top:8px;border-radius:13px}
+ .stat{gap:10px;padding:10px 8px}
+ .stat>svg{width:23px}
+ .projects-section{padding-top:48px}
+ .section-heading{align-items:center;gap:10px}
+ .section-heading h2{font-size:21px}
+ .section-heading>.text-link{font-size:11px}
+ .project-heading-actions{gap:10px}
+ .project-heading-actions>.text-link{font-size:10px;white-space:nowrap}
+ .project-carousel-controls{display:flex}
+ .project-grid{display:flex;gap:13px;overflow-x:auto;overflow-y:hidden;padding:2px 1px 17px;scroll-snap-type:x mandatory;scroll-padding:2px;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+ .project-card{flex:0 0 min(86%,360px);min-width:0;scroll-snap-align:start;scroll-snap-stop:always;border-radius:16px}
+ .project-card:hover{transform:none;box-shadow:none}
+ .project-visual{height:170px;min-height:170px;margin:8px}
+ .project-content{padding:13px 14px 15px}
+ .project-title-row h3{font-size:17px;line-height:1.3}
+ .project-content>p{font-size:12px;min-height:0;line-height:1.65;margin:9px 0 13px}
+ .tag-row{gap:5px}
+ .tag-row span{font-size:10px;padding:6px 7px}
+ .project-actions{gap:12px;font-size:10px;flex-wrap:wrap}
+ .project-actions a{min-height:36px}
+ .two-col{gap:14px;padding-top:48px}
+ .panel{padding:19px;border-radius:15px}
+ .panel p{font-size:12px}
+ .skill-group{grid-template-columns:1fr;gap:5px}
+ .education-card{padding:17px;border-radius:15px}
+ .experience-toolbar{gap:12px}
+ .experience-filters{width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:5px}
+ .experience-filters button{white-space:nowrap;min-height:38px}
+ .timeline{margin-left:5px;padding-left:20px}
+ .timeline-item{padding:0;border:0;background:transparent;overflow:visible}
+ .timeline-dot{left:-26px}
+ .timeline-card{padding:16px;border-radius:14px}
+ .timeline-head h3{font-size:16px}
+ .timeline-card p{font-size:12px}
+ .achievement{padding:12px;border-radius:12px}
+ .contact-card{padding:34px 16px;border-radius:16px}
+ .contact-card h2{font-size:30px}
+ .contact-email{font-size:10px;overflow-wrap:anywhere}
+ .footer{padding:20px 0;align-items:flex-start}
+ .footer>div{gap:13px;flex-wrap:wrap}
+}
+@media(max-width:380px){
+ .project-card{flex-basis:90%}
+ .project-heading-actions>.text-link{font-size:9px}
+ .hero-buttons .button{font-size:11px}
+ .stat span{font-size:9px}
+}
+@media(prefers-reduced-motion:reduce){
+ .project-grid{scroll-behavior:auto}
+ .project-card,.project-carousel-controls button{transition:none}
+}
