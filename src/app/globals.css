@@ -106,3 +106,7 @@
 .experience-type{display:inline-block;margin-top:13px;padding:5px 10px;border:1px solid #1b6949;border-radius:999px;color:#74eabb;background:#09271a;font-size:11px}
 .timeline-card p{margin:12px 0 0;color:#a9beb3;line-height:1.75}
 @media(max-width:640px){.experience-toolbar{align-items:flex-start}.timeline-card{padding:17px}.timeline-head{flex-direction:column;gap:8px}.experience-period{white-space:normal}}
+
+.experience-org-links{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.experience-partner-link{display:inline-flex;align-items:center;gap:5px;color:#a8c5b6;font-size:12px;text-decoration:none;border-bottom:1px dashed #527d68}
+.experience-partner-link:hover{color:#19e69a;border-color:#19e69a}
