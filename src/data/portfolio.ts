@@ -33,16 +33,28 @@ export const skills = [
 ];
 
 export const experience = [
-  { role: 'Machine Learning Intern', org: 'Infosys Springboard', period: 'Jan 2026 — Apr 2026', detail: 'Built an NLP email classification solution and worked on API and dashboard integration.' },
-  { role: 'Applied AI Intern', org: 'IBM SkillsBuild', period: 'Dec 2025 — Jan 2026', detail: 'Explored applied AI concepts and practical AI development workflows.' },
-  { role: 'Open Source Contributor', org: 'GirlScript Summer of Code', period: '2026', detail: 'Contributed to open-source projects and collaborated with developer communities.' },
-  { role: 'Campus Ambassador', org: 'eDC, IIT Delhi', period: '2026', detail: 'Supported community outreach and student engagement activities.' },
+  { role: 'TPO Cell Council Member', org: 'JIET Group of Institutions', period: 'Oct 2026 — Present', detail: 'Coordinate placement drives, recruitment schedules, student communication, and pre-placement activities with the Training & Placement team.' },
+  { role: 'Open Source Contributor', org: 'GirlScript Summer of Code (GSSoC)', period: 'Apr 2026 — Jul 2026', detail: 'Contributed to real-world repositories through documentation, feature improvements, issue fixes, API documentation, roadmap creation, and pull-request collaboration.' },
+  { role: 'AI/ML Intern', org: 'Sophia Edu & IT Solutions', period: 'May 2026 — Jun 2026', detail: 'Worked on ML prediction, classification, and data-analysis tasks; practiced preprocessing, feature engineering, model evaluation, Python, Pandas, NumPy, and Scikit-learn.' },
+  { role: 'Applied AI & Business Intelligence Intern', org: 'CSRBOX · IBM SkillsBuild', period: 'Mar 2026 — Apr 2026', detail: 'Completed a 6-week AICTE–CSRBOX–IBM SkillsBuild internship focused on AI strategy, applied AI, business intelligence, prompt engineering, and data-driven problem solving.' },
+  { role: 'Machine Learning Intern', org: 'Infosys Springboard', period: 'Jan 2026 — Apr 2026', detail: 'Built an AI-powered enterprise email classifier using NLP, TF-IDF, Logistic Regression, SVM, Naive Bayes, and Random Forest; added urgency detection, Streamlit analytics, REST APIs, and Render deployment. Resume-reported model accuracy: approximately 97–98%.' },
+  { role: 'Applied AI Intern', org: 'CSRBOX · IBM SkillsBuild', period: 'Dec 2025 — Jan 2026', detail: 'Completed a 6-week virtual internship exploring Applied AI, Generative AI, and Agentic AI; worked with Python, Google Colab, IBM watsonx, IBM Granite, AI workflows, and mentor-guided project work.' },
+  { role: 'Campus Ambassador', org: 'eDC · IIT Delhi', period: 'Dec 2025 — Jan 2026', detail: 'Represented eDC IIT Delhi and supported entrepreneurship outreach and student engagement activities.' },
+  { role: 'AI & ML Intern', org: 'Edunet Foundation · IBM SkillsBuild', period: 'Dec 2025 — Jan 2026', detail: 'Completed an AICTE–Edunet Foundation learning internship with mentor-guided AI/ML project work, technical sessions, and weekly milestones.' },
+  { role: 'Employability Skills & Digital Literacy with AI Intern', org: 'Edunet Foundation', period: 'Nov 2025 — Dec 2025', detail: 'Completed structured learning in employability skills, digital literacy, and foundational AI through SkillsBuild.' },
+  { role: 'Conversational Data Analytics with LLMs Intern', org: 'VOIS for Tech Program', period: 'Sep 2025 — Oct 2025', detail: 'Completed a 4-week program covering domain-based data analytics case studies and LLM techniques, with a mentored project and weekly milestones.' },
 ];
 
 export const achievements = [
   'Microsoft Hackathon Finalist — Code Cubicle 5.0',
-  'Oracle OCI AI Foundations Associate',
-  'Oracle OCI Generative AI Professional',
-  'Deloitte Technology Job Simulation',
+  'Oracle Cloud Infrastructure — AI Foundations Associate (2025)',
+  'Oracle Cloud Infrastructure — Generative AI Professional (2025)',
+  'Oracle Cloud Infrastructure — Data Science Professional (2025)',
+  'Deloitte Australia — Technology Job Simulation',
   '500+ DSA problems solved across coding platforms',
+];
+
+
+export const education = [
+  { degree: 'Bachelor of Technology — Artificial Intelligence', institution: 'JIET Group of Institutions, Jodhpur', period: 'Sep 2024 — Sep 2028', detail: 'Computer Science & Engineering (AI & ML) · CGPA: 9.59 / 10' },
 ];
