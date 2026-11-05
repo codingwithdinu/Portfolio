@@ -5,7 +5,10 @@ import { ArrowDown, ArrowRight, ArrowUpRight, Award, BrainCircuit, BriefcaseBusi
 import { achievements, experience, profile, projects, skills } from '@/data/portfolio';
 
 export default function Home() {
- const [menuOpen,setMenuOpen]=useState(false);\n const heroRoles=['AI/ML Engineer','Full-Stack Developer','Generative AI Builder','RAG & Automation Developer'];\n const [roleIndex,setRoleIndex]=useState(0);\n useEffect(()=>{const timer=window.setInterval(()=>setRoleIndex(i=>(i+1)%heroRoles.length),2600);return ()=>window.clearInterval(timer)},[]);
+ const [menuOpen,setMenuOpen]=useState(false);
+ const heroRoles=['AI/ML Engineer','Full-Stack Developer','Generative AI Builder','RAG & Automation Developer'];
+ const [roleIndex,setRoleIndex]=useState(0);
+ useEffect(()=>{const timer=window.setInterval(()=>setRoleIndex(i=>(i+1)%heroRoles.length),2600);return ()=>window.clearInterval(timer)},[]);
  const nav=['About','Projects','Experience','Achievements','Contact'];
  return <main>
   <header className="site-header"><a className="brand" href="#home"><span className="brand-mark">DP</span>Dinesh Patel</a><button className="mobile-menu" onClick={()=>setMenuOpen(!menuOpen)} aria-label="Toggle navigation">{menuOpen?<X/>:<Menu/>}</button><nav className={menuOpen?'nav-links open':'nav-links'}><a href="#home" onClick={()=>setMenuOpen(false)}>Home</a>{nav.map(n=><a key={n} href={'#'+n.toLowerCase()} onClick={()=>setMenuOpen(false)}>{n}</a>)}</nav><div className="header-actions"><a className="icon-link" href={profile.github}><Github/></a><a className="icon-link" href={profile.linkedin}><Linkedin/></a><a className="button button-primary resume-top" href={profile.resume}>Resume <ArrowUpRight size={16}/></a></div></header>
