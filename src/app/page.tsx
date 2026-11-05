@@ -5,7 +5,10 @@ import { ArrowDown, ArrowRight, ArrowUpRight, Award, BrainCircuit, BriefcaseBusi
 import { achievements, education, experience, profile, projects, skills } from '@/data/portfolio';
 
 export default function Home() {
- const [menuOpen,setMenuOpen]=useState(false);\n const [experienceFilter,setExperienceFilter]=useState('All');\n const experienceFilters=['All','Internship','Open Source','Leadership'];\n const visibleExperience=experience.filter(item=>experienceFilter==='All'||item.type===experienceFilter);
+ const [menuOpen,setMenuOpen]=useState(false);
+ const [experienceFilter,setExperienceFilter]=useState('All');
+ const experienceFilters=['All','Internship','Open Source','Leadership'];
+ const visibleExperience=experience.filter(item=>experienceFilter==='All'||item.type===experienceFilter);
  const heroRoles=['AI/ML Engineer','Full-Stack Developer','Generative AI Builder','RAG & Automation Developer'];
  const [roleIndex,setRoleIndex]=useState(0);
  useEffect(()=>{const timer=window.setInterval(()=>setRoleIndex(i=>(i+1)%heroRoles.length),2600);return ()=>window.clearInterval(timer)},[]);
