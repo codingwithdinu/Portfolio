@@ -58,3 +58,19 @@
 @keyframes statusPulse{0%,100%{box-shadow:0 0 0 0 #13e99570}50%{box-shadow:0 0 0 7px #13e99500}}
 @media(max-width:760px){.hero-role-line{gap:7px;font-size:11px}.hero-role-line .rotating-role{min-width:0}.hero-role-line i{display:none}}
 @media(prefers-reduced-motion:reduce){.portrait-float{transform:none!important}.eyebrow .status-dot{animation:none}}
+
+/* Keep orbiting skill labels visibly animated; do not pause on hover */
+.hero-visual:hover .orbit-ring-outer,.hero-visual:hover .orbit-label{animation-play-state:running!important}
+.orbit-ring-outer{animation:skillOrbit 18s linear infinite!important;transform-origin:center}
+.orbit-label{animation:labelCounterOrbit 18s linear infinite!important;transform-origin:center}
+.orbit-ring-outer .orbit-label-1{left:50%;top:-18px}
+.orbit-ring-outer .orbit-label-2{right:-42px;top:18%}
+.orbit-ring-outer .orbit-label-3{right:-42px;bottom:18%}
+.orbit-ring-outer .orbit-label-4{left:50%;bottom:-18px}
+.orbit-ring-outer .orbit-label-5{left:-28px;bottom:18%}
+.orbit-ring-outer .orbit-label-6{left:-42px;top:18%}
+.leetcode-mark{width:42px;height:42px;display:inline-flex;align-items:center;justify-content:center;border:1px solid #8ca99b66;border-radius:10px;color:#eaf8f1;transition:all .25s ease;background:rgba(5,24,16,.45)}
+.leetcode-mark svg{display:block;stroke-width:1.9}
+.leetcode-mark:hover{color:#12e89a;border-color:#12e89a;box-shadow:0 0 18px #12e89a35;transform:translateY(-3px)}
+.social-row{align-items:center;gap:16px}
+@media(prefers-reduced-motion:reduce){.orbit-ring-outer,.orbit-label{animation:none!important}}
