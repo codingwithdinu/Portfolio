@@ -11,3 +11,9 @@
 .project-visual .visual-center,.project-visual .visual-orb{z-index:3}
 .project-visual:not([data-preview-error="true"]) .visual-center,.project-visual:not([data-preview-error="true"]) .visual-orb{display:none}
 .project-visual[data-preview-error="true"] .project-preview-shot{display:none}
+
+/* Hero portrait: transparent cutout, no circular frame or initials */
+.portrait-frame{width:min(390px,100%);height:440px;border:0;border-radius:0;overflow:visible;background:transparent;box-shadow:none;display:flex;align-items:flex-end;justify-content:center}
+.portrait-photo{position:relative;inset:auto;width:100%;height:100%;object-fit:contain;object-position:center bottom;z-index:2;filter:drop-shadow(0 16px 28px rgba(0,0,0,.28))}
+.portrait-fallback,.portrait-glow,.orbit{display:none!important}
+@media(max-width:760px){.portrait-frame{width:270px;height:340px}.portrait-photo{width:100%;height:100%}}
