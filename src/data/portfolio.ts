@@ -28,8 +28,9 @@ export const skills = [
   { group: 'Languages', items: ['Python', 'C++', 'JavaScript', 'TypeScript', 'Java', 'SQL'] },
   { group: 'Frontend', items: ['React', 'Next.js', 'HTML', 'CSS', 'Tailwind CSS', 'Framer Motion'] },
   { group: 'Backend & Data', items: ['Node.js', 'Express', 'FastAPI', 'Flask', 'MongoDB', 'PostgreSQL', 'Supabase', 'Prisma'] },
-  { group: 'AI / ML', items: ['Machine Learning', 'NLP', 'TensorFlow', 'Scikit-learn', 'LangChain', 'FAISS', 'RAG'] },
-  { group: 'Tools & Cloud', items: ['Git', 'Docker', 'GitHub', 'Vercel', 'Render', 'Redis', 'Postman'] },
+  { group: 'AI / ML', items: ['Machine Learning', 'NLP', 'TensorFlow', 'Scikit-learn', 'Pandas', 'NumPy', 'TF-IDF', 'LangChain', 'FAISS', 'RAG', 'IBM watsonx', 'IBM Granite'] },
+  { group: 'Tools & Cloud', items: ['Git', 'Docker', 'GitHub', 'Vercel', 'Render', 'Redis', 'Postman', 'Google Colab', 'Streamlit'] },
+  { group: 'Leadership', items: ['Event Planning', 'Event Management', 'Team Management', 'Student Outreach'] },
 ];
 
 export const experience = [
