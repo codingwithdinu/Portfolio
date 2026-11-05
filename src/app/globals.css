@@ -88,3 +88,21 @@
 .timeline{gap:24px}
 .timeline-item p{line-height:1.75}
 @media(max-width:640px){.education-card{padding:19px;gap:13px}.education-card h3{font-size:18px}}
+
+/* Interactive experience timeline */
+.experience-toolbar{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;margin:0 0 28px}
+.experience-count{margin:0;color:#9db6aa;font-size:13px}
+.experience-filters{display:flex;gap:8px;flex-wrap:wrap}
+.experience-filters button{border:1px solid #285541;background:#071b13;color:#bfd2c7;border-radius:999px;padding:8px 14px;font:inherit;font-size:12px;cursor:pointer;transition:.2s}
+.experience-filters button:hover,.experience-filters button.active{background:#0edb8c;color:#03150d;border-color:#0edb8c}
+.timeline-item{position:relative}
+.timeline-card{width:100%;padding:22px 24px;border:1px solid #174b38;border-radius:16px;background:linear-gradient(145deg,rgba(8,31,21,.88),rgba(4,17,13,.9));transition:border-color .2s,transform .2s}
+.timeline-card:hover{border-color:#13d98a;transform:translateX(4px)}
+.timeline-head{display:flex;justify-content:space-between;align-items:flex-start;gap:18px}
+.timeline-head h3{margin:0 0 7px;color:#f0fff7;font-size:18px}
+.experience-org-link{display:inline-flex;align-items:center;gap:6px;color:#19e69a;text-decoration:none;font-weight:600}
+.experience-org-link:hover{text-decoration:underline}
+.experience-period{color:#9db6aa;font-size:12px;white-space:nowrap}
+.experience-type{display:inline-block;margin-top:13px;padding:5px 10px;border:1px solid #1b6949;border-radius:999px;color:#74eabb;background:#09271a;font-size:11px}
+.timeline-card p{margin:12px 0 0;color:#a9beb3;line-height:1.75}
+@media(max-width:640px){.experience-toolbar{align-items:flex-start}.timeline-card{padding:17px}.timeline-head{flex-direction:column;gap:8px}.experience-period{white-space:normal}}
